@@ -1,0 +1,57 @@
+# Featured research on Home: the group's best papers in composite materials (main field).
+# pub = the paper's url in publications.yml (title, venue, year, level and link come from there, so keep one source).
+# image: photo or figure from the paper (WebP, about 900 px wide, under 100 KB) in assets/img/featured/;
+# only use figures the owner may reuse (open access licence such as CC BY, or the owner's own photos), and fill credit and license.
+# alt: image description in English. desc and desc_id: one sentence with the main finding, only numbers that are in the paper.
+
+- id: bamboo-alkali-treatment
+  pub: "https://doi.org/10.1007/s43939-025-00295-7"
+  image: featured/bamboo-parring-hexagon.webp
+  alt: "Parring bamboo (Gigantochloa atter) clumps, culms and a young shoot"
+  credit: "Massaguni et al. (2025), Discover Materials 5:136"
+  license: "CC BY 4.0"
+  license_url: "https://creativecommons.org/licenses/by/4.0/"
+  desc: >-
+    Soaking parring bamboo fibre in 5% NaOH for 45 minutes gave the best result.
+    Fibre tensile strength rose from 225 to 249.5 MPa and fibre-to-resin shear
+    strength reached 14.5 MPa, over 2.5 times that of untreated fibre, with no
+    fibre pull-out.
+  desc_id: >-
+    Merendam serat bambu parring dalam NaOH 5% selama 45 menit memberi hasil
+    terbaik. Kuat tarik serat naik dari 225 menjadi 249,5 MPa dan kuat geser
+    antara serat dan resin mencapai 14,5 MPa, lebih dari 2,5 kali serat tanpa
+    perlakuan, tanpa serat yang tercabut.
+
+- id: bamboo-wettability
+  pub: "https://doi.org/10.1155/mdp2/7886553"
+  image: featured/bamboo-naoh-bath.webp
+  alt: "Parring bamboo strips soaking in a hot sodium hydroxide bath during delignification"
+  credit: "Massaguni et al. (2025), Material Design & Processing Communications 2025, 7886553"
+  license: "CC BY"
+  license_url: "https://creativecommons.org/licenses/by/4.0/"
+  desc: >-
+    The contact angle of flame-retardant polyester resin on parring bamboo fibre
+    was measured by the sessile drop method (ASTM D7334). Fibre treated with 11%
+    NaOH for 90 minutes gave the most consistent wetting (44.9° ± 1.9°), while 3%
+    NaOH for 45 minutes gave unstable values (33.6° ± 7.4°).
+  desc_id: >-
+    Sudut kontak resin poliester tahan api pada serat bambu parring diukur dengan
+    metode sessile drop (ASTM D7334). Serat yang diberi perlakuan NaOH 11% selama
+    90 menit menghasilkan pembasahan paling konsisten (44,9° ± 1,9°), sedangkan
+    NaOH 3% selama 45 menit memberi nilai yang tidak stabil (33,6° ± 7,4°).
+
+- id: bamboo-safety-cabin
+  pub: "https://doi.org/10.55713/jmmm.v36i4.2563"
+  image: featured/bamboo-ul94-burn-test.webp
+  alt: "UL-94 vertical burn test of six parring bamboo composite specimens, from ignition to the end of the test"
+  credit: "Massaguni et al. (2026), Journal of Metals, Materials and Minerals 36(4), e2563 (authors' own figure)"
+  desc: >-
+    Treated fibre at 65% fibre volume fraction gave the highest performance,
+    with tensile strength 57.4 MPa, flexural strength 112.8 MPa and impact
+    toughness 46.9 kJ/m². All six composite variants reached the UL-94 V-0 fire
+    rating without flaming droplets.
+  desc_id: >-
+    Serat yang diberi perlakuan pada fraksi volume serat 65% memberi kinerja
+    tertinggi, dengan kuat tarik 57,4 MPa, kuat lentur 112,8 MPa, dan
+    ketangguhan impak 46,9 kJ/m². Keenam varian komposit mencapai klasifikasi
+    tahan api UL-94 V-0 tanpa tetesan api.

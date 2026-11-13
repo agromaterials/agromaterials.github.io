@@ -1,0 +1,20 @@
+# Home Instagram gallery. Written by tools/fetch_instagram.py (workflow Update Instagram gallery), do not edit by hand.
+# Updated 2026-11-13 09:17 UTC from the Instagram feed.
+enabled: true
+tiles:
+  - image: "social/ig-17919453765540715.webp"
+    alt: "Dari ruang kelas ke laboratorium 🌾 Halo Sobat Agromaterials! Saat ini kami sedang melakukan pengujian..."
+    url: "https://www.instagram.com/p/DfqfsKsEVTV/"
+    type: carousel
+  - image: "social/ig-17987859653891842.webp"
+    alt: "Petani Soppeng belajar bikin panel dari sekam padi 🌾 4–6 November 2026, Agromaterials Research Group..."
+    url: "https://www.instagram.com/p/Dfo8GImmqPt/"
+    type: carousel
+  - image: "social/ig-18017551988972065.webp"
+    alt: "Tiga bahan, tiga cerita 🌱 🎍 Bambu parring: kami kaji perlakuan alkali pada seratnya dan ikatannya dengan..."
+    url: "https://www.instagram.com/p/Dfo7Bs8GixI/"
+    type: carousel
+  - image: "social/ig-18129071795476850.webp"
+    alt: "Bagaimana tanaman bisa jadi panel? 🌱➡️🧱 Di Agromaterials Research Group, perjalanannya lima langkah: tanaman..."
+    url: "https://www.instagram.com/p/Dfo6pyQmiGf/"
+    type: carousel

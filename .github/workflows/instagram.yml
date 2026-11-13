@@ -1,0 +1,52 @@
+# Keeps the Home Instagram gallery in step with the group's Instagram account.
+# Reads the Behold feed set in _config.yml (lab.instagram_feed); optional fallback: secret INSTAGRAM_TOKEN.
+# Runs every 6 hours and by hand: Actions > Update Instagram gallery > Run workflow.
+name: Update Instagram gallery
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours (a commit is made only when the feed changed)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: instagram-gallery
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Pillow
+        run: pip install pillow
+      - name: Fetch the newest posts
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+        run: python3 tools/fetch_instagram.py
+      - name: Commit changes
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets/img/social _data/instagram.yml
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"; echo "No new posts."
+          else
+            git commit -m "Update Instagram gallery from the latest posts"
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Ask GitHub Pages to rebuild
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages build request skipped"

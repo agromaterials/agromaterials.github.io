@@ -1,0 +1,92 @@
+# ============================================================
+#  Material Lab — Jekyll site configuration
+#  Edit the values below to match your lab.
+# ============================================================
+
+title: Agromaterials Research Group
+tagline: Composite materials engineering and agro-industry machinery for sustainable manufacturing
+description: >-
+  Agromaterials Research Group, Politeknik ATI Makassar: composite materials
+  engineering from plant-based resources, agro-processing machinery, manufacturing
+  and CNC, and energy and drive systems.
+tagline_id: Rekayasa material komposit dan mesin industri agro untuk manufaktur berkelanjutan
+description_id: >-
+  Agromaterials Research Group, Politeknik ATI Makassar: rekayasa material
+  komposit berbahan nabati, mesin pengolahan agro, manufaktur dan CNC, serta energi
+  dan sistem penggerak.
+lang: en        # default language; visitors switch with the EN | ID button
+author: Agromaterials Research Group
+
+# --- Address of the site --------------------------------------------------
+# The site is served at https://agromaterials.atim.ac.id (custom domain, CNAME file at the repo root; the repo is
+# agromaterials/agromaterials.github.io). The github.io address redirects to it.
+#   url:     https://agromaterials.atim.ac.id
+#   baseurl: ""
+#
+# When you switch to a custom domain (e.g. agromaterials.atim.ac.id) use:
+#   url:     https://agromaterials.atim.ac.id
+#   baseurl: ""
+# and add a file named CNAME at the repo root containing that domain.
+url: https://agromaterials.atim.ac.id
+baseurl: ""
+
+# --- Lab details used in footer, contact page, and structured data ---------
+lab:
+  nav_name: Agromaterials Research Group   # text beside the logo in the navbar
+  email: agromaterialsrg@atim.ac.id
+  institution: Politeknik ATI Makassar
+  institution_url: https://atim.ac.id
+  department: Agro Industry Manufacturing Engineering
+  department_id: Agro Industry Manufacturing Engineering
+  address_line1: Politeknik ATI Makassar
+  address_line2: Makassar, Indonesia
+  # Reference USD/IDR rate shown only when the live rate cannot be fetched (update now and then)
+  # Optional: link of a Google Sheet "published to the web" as CSV whose cell A1 is =GOOGLEFINANCE("CURRENCY:USDIDR"); tried before the other rate services
+  usd_idr_sheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQydZsJ0V_2xyU_WTfc_vDsl-Jnp387bOgLqpPGn-9Rk4VY7-p6nGvsTmDygosK8kr5hJecuTkV0F7t/pub?gid=868346548&single=true&output=csv"
+  usd_idr_fallback: 18100
+  usd_idr_fallback_date: "2026-11-06"
+  # Contact form (Web3Forms, free). Paste the access key that Web3Forms emails to agromaterialsrg@atim.ac.id.
+  # Empty = the form is hidden and the Contact page shows the email address only. The key is meant to be public.
+  # Google Search Console verification token (the content value of the HTML tag method); empty = no tag
+  google_site_verification: ""
+  # GoatCounter account code (agromaterials.goatcounter.com): page view counter and dashboard; empty = off
+  goatcounter: "agromaterials"
+  # Behold.so JSON feed of the Instagram account (public address, not a secret); read daily by tools/fetch_instagram.py for the Home gallery
+  instagram_feed: "https://feeds.behold.so/IMDqbAjGmhCGejNrrldk"
+  # Firebase Realtime Database URL: per-article read counts shown on the site (REST, rules allow only +1); empty = off
+  firebase_db: "https://agromaterials-default-rtdb.asia-southeast1.firebasedatabase.app"
+  contact_form_key: "62380007-bdad-41ad-a663-1cab946c67e9"
+  social:
+    github: ""
+    scholar: ""
+    linkedin: ""
+    instagram: "https://www.instagram.com/agromaterials/"
+    x: ""
+
+# --- Optional pages -------------------------------------------------------
+# Hidden for now. To bring a page back: set its flag to true AND remove its file
+# from the `exclude:` list below (resources.html, deadlines.html, apply.html).
+show_pages:
+  grants: true
+  resources: false
+  calendar: false
+  apply: false
+
+# --- Build settings --------------------------------------------------------
+markdown: kramdown
+future: true      # publish posts even if their date is later than today
+permalink: /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - resources.html   # hidden page (see show_pages)
+  - deadlines.html   # hidden page (see show_pages)
+  - apply.html       # hidden page (see show_pages)
+  - README.md
+  - LICENSE
+  - tools
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

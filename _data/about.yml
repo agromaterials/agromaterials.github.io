@@ -1,0 +1,26 @@
+# About page data. Fields ending in _id are the Indonesian text.
+# vision / mission: leave empty ("") until the owner provides them; the sections are hidden while empty.
+# To fill: vision: "text", and mission as a list of short sentences (see example in git history of this file).
+
+vision: ""
+vision_id: ""
+mission: []
+mission_id: []
+
+# Logo walls on the About page (logos only; the name is used as alt text and tooltip). Logos are WebP in assets/img/partners/ (height about 112 px).
+# funders: institutions that funded or supported the group's work (one logo per institution; grants.yml keeps the details).
+funders:
+  - { name: "Ministry of Agriculture", name_id: "Kementerian Pertanian", logo: "kementan-v2.webp", h: 67 }
+  - { name: "Ministry of Education, Culture, Research, and Technology / Ministry of Higher Education, Science, and Technology", name_id: "Kemendikbudristek / Kemdiktisaintek", logo: "kemdikbud-v2.webp", h: 66 }
+  - { name: "Plantation Fund Management Agency (BPDP)", name_id: "Badan Pengelola Dana Perkebunan (BPDP)", logo: "bpdp-v2.webp", h: 50 }
+  - { name: "Ministry of Industry", name_id: "Kementerian Perindustrian", logo: "kemenperin-v2.webp", h: 44 }
+  - { name: "Politeknik ATI Makassar", name_id: "Politeknik ATI Makassar", logo: "atim-v2.webp", h: 66 }
+  - { name: "Hasanuddin University", name_id: "Universitas Hasanuddin", logo: "unhas-v2.webp", h: 70 }
+  - { name: "iCARE", name_id: "iCARE", logo: "icare-v2.webp", h: 46 }
+  - { name: "The World Bank", name_id: "Bank Dunia", logo: "worldbank.webp", h: 38 }
+
+# Institutions of co-authors on the group's publications (from the owner's Google Scholar profile).
+collaborators:
+  - { name: "Hasanuddin University", name_id: "Universitas Hasanuddin", logo: "unhas-v2.webp", h: 70 }
+  - { name: "Universiti Kebangsaan Malaysia", name_id: "Universiti Kebangsaan Malaysia", logo: "ukm-v2.webp", h: 51 }
+  - { name: "Politeknik Negeri Ujung Pandang", name_id: "Politeknik Negeri Ujung Pandang", logo: "pnup-emblem-v2.webp", h: 68 }

@@ -1,0 +1,234 @@
+# Funded grants (Grants page). Fields ending in _id are the Indonesian text.
+# status: active | completed  (there is no "under review" category; a `submitted` grant is simply not shown)
+# amount: free text shown on the card. amount_value: plain number in IDR (no dots) used for the total on the page;
+# add `currency: USD` (etc.) for non-rupiah grants, they are left out of the rupiah total.
+# amount: pi / partners / desc / url are optional and hidden when empty.
+# Source: owner's list (2026-11-05), extended from the owner's CV (2026-11-10). Status is inferred from the year (2026 = active).
+
+- title: "Production of Rice Husk-Based Smart Composite Panels for Grain Storage Warehouses in Soppeng Regency"
+  title_id: "Produksi Smart Composite Panel Berbasis Sekam Padi untuk Gudang Penyimpanan Gabah di Kabupaten Soppeng"
+  funder: "Ministry of Agriculture"
+  funder_id: "Kementerian Pertanian"
+  scheme: "ICARE"
+  scheme_id: "ICARE"
+  amount: "Rp 500.000.000"
+  amount_value: 500000000
+  year_start: 2026
+  year_end: 2026
+  status: active
+  url: ""
+
+- title: "Integration of a Sharia Profit-Sharing Scheme and Livestock Health Technology for Beef Cattle Farmers"
+  title_id: "Integrasi Skema Bagi Hasil Syariah dan Teknologi Kesehatan Ternak bagi Peternak Sapi Potong"
+  funder: "Ministry of Agriculture"
+  funder_id: "Kementerian Pertanian"
+  scheme: "ICARE"
+  scheme_id: "ICARE"
+  amount: "Rp 500.000.000"
+  amount_value: 500000000
+  year_start: 2026
+  year_end: 2026
+  status: active
+  partners: "NAF Trinergi Group"
+  partners_id: "NAF Trinergi Group"
+  url: ""
+
+- title: "Production of Rice Straw Natural Fiber Cushioning Packaging Material in Soppeng Regency"
+  title_id: "Produksi Material Kemasan Cushioning Berbasis Serat Alam Jerami Padi di Kabupaten Soppeng"
+  funder: "Ministry of Agriculture"
+  funder_id: "Kementerian Pertanian"
+  scheme: "ICARE"
+  scheme_id: "ICARE"
+  amount: "Rp 700.000.000"
+  amount_value: 700000000
+  year_start: 2026
+  year_end: 2026
+  status: active
+  partners: "NAF Trinergi Group"
+  partners_id: "NAF Trinergi Group"
+  url: ""
+
+- title: "Process Standardization and Manufacturing Partnership for CERI-TECH Machines to Increase Production Capacity"
+  title_id: "Standardisasi Proses dan Kemitraan Manufaktur Mesin CERI-TECH untuk Meningkatkan Kapasitas Produksi"
+  funder: "Ministry of Higher Education, Science, and Technology"
+  funder_id: "Kementerian Pendidikan Tinggi, Sains, dan Teknologi"
+  scheme: "Hiliriset"
+  scheme_id: "Hiliriset"
+  amount: "Rp 518.000.000"
+  amount_value: 518000000
+  year_start: 2026
+  year_end: 2026
+  status: active
+  partners: "Gross Nusa Tech"
+  partners_id: "Gross Nusa Tech"
+  url: ""
+
+- title: "Process Line Integration and Quality Control of Fire-Resistant Bamboo Composite Panels to Improve Production Capacity and Quality"
+  title_id: "Integrasi Lini Proses dan Kontrol Mutu Panel Komposit Bambu Tahan Api untuk Meningkatkan Kapasitas dan Kualitas Produksi"
+  funder: "Ministry of Higher Education, Science, and Technology"
+  funder_id: "Kementerian Pendidikan Tinggi, Sains, dan Teknologi"
+  scheme: "Hiliriset"
+  scheme_id: "Hiliriset"
+  amount: "Rp 446.827.000"
+  amount_value: 446827000
+  year_start: 2026
+  year_end: 2026
+  status: active
+  partners: "Gross Nusa Tech"
+  partners_id: "Gross Nusa Tech"
+  url: ""
+
+- title: "Production of a Smart Material Cooling Pad System Based on Oil Palm Empty Fruit Bunches"
+  title_id: "Produksi Smart Material Cooling Pad System Berbasis Tandan Kosong Kelapa Sawit (TKKS)"
+  funder: "Plantation Fund Management Agency (BPDP)"
+  funder_id: "Badan Pengelola Dana Perkebunan (BPDP)"
+  scheme: "Research grant"
+  scheme_id: "Hibah riset"
+  amount: "Rp 1.700.000.000"
+  amount_value: 1700000000
+  year_start: 2026
+  year_end: 2026
+  status: active
+  url: ""
+
+- title: "Design and Development of a Bamboo Fiber Extraction Machine with AI-Based Automatic Grinding Control"
+  title_id: "Rancang Bangun Mesin Ekstraksi Serat Bambu dengan Kontrol Penggilingan Otomatis Berbasis Artificial Intelligence"
+  funder: "Ministry of Industry"
+  funder_id: "Kementerian Perindustrian"
+  scheme: "SPIRIT"
+  scheme_id: "SPIRIT"
+  amount: "Rp 118.935.000"
+  amount_value: 118935000
+  year_start: 2025
+  year_end: 2025
+  status: completed
+  url: ""
+
+- title: "Innovation of a Coconut Skin Peeling Machine to Improve the Quality and Productivity of the Coconut Processing Industry"
+  title_id: "Inovasi Mesin Pengupas Kulit Ari Kelapa untuk Peningkatan Kualitas dan Produktivitas Industri Pengolahan Kelapa"
+  funder: "Politeknik ATI Makassar"
+  funder_id: "Politeknik ATI Makassar"
+  scheme: "Internal research grant"
+  scheme_id: "Hibah penelitian internal"
+  amount: "Rp 3.000.000"
+  amount_value: 3000000
+  year_start: 2025
+  year_end: 2025
+  status: completed
+  url: ""
+
+- title: "Burn Resistance Analysis of Parring Bamboo Fiber Treated with a Flame-Retardant Inhibitor for Fire-Resistant Composite Applications"
+  title_id: "Analisis Ketahanan Bakar Serat Bambu Parring dengan Perlakuan Flame-Retardant Inhibitor untuk Aplikasi Komposit Tahan Api"
+  funder: "Hasanuddin University (LPPM)"
+  funder_id: "Universitas Hasanuddin (LPPM)"
+  scheme: "Research grant"
+  scheme_id: "Hibah penelitian"
+  amount: "Rp 60.000.000"
+  amount_value: 60000000
+  year_start: 2025
+  year_end: 2025
+  status: completed
+  partners: "Hasanuddin University"
+  partners_id: "Universitas Hasanuddin"
+  url: ""
+
+- title: "Engineering Innovation of a Coffee Cherry Grading Machine with Semi and Full Wash Methods"
+  title_id: "Rekayasa Inovasi Mesin Grading Buah Kopi dengan Metode Semi dan Full Wash"
+  funder: "Ministry of Education, Culture, Research, and Technology"
+  funder_id: "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi"
+  scheme: "BIMA"
+  scheme_id: "BIMA"
+  amount: "Rp 123.390.000"
+  amount_value: 123390000
+  year_start: 2024
+  year_end: 2024
+  status: completed
+  partners: "Gross Nusa Tech"
+  partners_id: "Gross Nusa Tech"
+  url: ""
+
+- title: "Design of a Manufacturing Program for Mass Production of Steel Hinges Using a Mazak Quick Turn Smart 150 S 2-Axis CNC Machine"
+  title_id: "Perancangan Program Manufaktur untuk Produksi Massal Engsel Baja Menggunakan Mesin CNC 2-Axis Mazak Quick Turn Smart 150 S"
+  funder: "Gross Nusa Tech and Politeknik ATI Makassar"
+  funder_id: "Gross Nusa Tech dan Politeknik ATI Makassar"
+  scheme: "Industry partnership"
+  scheme_id: "Kemitraan industri"
+  amount: "Rp 78.000.000"
+  amount_value: 78000000
+  year_start: 2023
+  year_end: 2024
+  status: completed
+  partners: "Gross Nusa Tech"
+  partners_id: "Gross Nusa Tech"
+  url: ""
+
+- title: "Design and Development of a Coffee Cherry Grading Machine with Automated Back Wash Circulation"
+  title_id: "Rancang Bangun Mesin Grading Buah Kopi dengan Otomatisasi Back Wash Circulation"
+  funder: "Ministry of Industry"
+  funder_id: "Kementerian Perindustrian"
+  scheme: "SPIRIT"
+  scheme_id: "SPIRIT"
+  amount: "Rp 69.978.150"
+  amount_value: 69978150
+  year_start: 2022
+  year_end: 2023
+  status: completed
+  partners: "Daruma"
+  partners_id: "Daruma"
+  url: ""
+
+- title: "Design and Construction of a 2-in-1 Ginger Grating and Squeezing Machine"
+  title_id: "Rancang Bangun Mesin 2 in 1 Pemarut dan Pemeras Jahe"
+  funder: "Politeknik ATI Makassar"
+  funder_id: "Politeknik ATI Makassar"
+  scheme: "Teaching Factory (TEFA)"
+  scheme_id: "Teaching Factory (TEFA)"
+  amount: "Rp 5.000.000"
+  amount_value: 5000000
+  year_start: 2022
+  year_end: 2023
+  status: completed
+  partners: "Sarabba Timusu"
+  partners_id: "Sarabba Timusu"
+  url: ""
+
+- title: "Design and Construction of a Production Aid for Circular Pattern Interpolation Products (CPIP) on a 3-Axis CNC Milling Machine"
+  title_id: "Rancang Bangun Alat Bantu Produksi Circular Pattern Interpolation Product (CPIP) pada Mesin 3 Axis CNC Milling"
+  funder: "Politeknik ATI Makassar"
+  funder_id: "Politeknik ATI Makassar"
+  scheme: "Institutional research funding (DIPA)"
+  scheme_id: "Pendanaan riset institusi (DIPA)"
+  amount: "Rp 20.000.000"
+  amount_value: 20000000
+  year_start: 2022
+  year_end: 2023
+  status: completed
+  url: ""
+
+- title: "Design and Construction of a Dial Stand for the D16 Crankshaft as a Measuring Aid at PT Tjokro Bersaudara, Pulobalangindo Branch"
+  title_id: "Rancang Bangun Dial Stand untuk Crankshaft D16 sebagai Alat Bantu Ukur di PT Tjokro Bersaudara Cabang Pulobalangindo"
+  funder: "PT Tjokro Bersaudara, Pulobalangindo Branch"
+  funder_id: "PT Tjokro Bersaudara Cabang Pulobalangindo"
+  scheme: "Industry partnership"
+  scheme_id: "Kemitraan industri"
+  amount: "Rp 780.000.000"
+  amount_value: 780000000
+  year_start: 2021
+  year_end: 2022
+  status: completed
+  partners: "PT Tjokro Bersaudara, Pulobalangindo Branch"
+  partners_id: "PT Tjokro Bersaudara Cabang Pulobalangindo"
+  url: ""
+
+- title: "Design of a Solar and Wind Powered Plastic Waste Pyrolysis Machine Using Autodesk Inventor 2020"
+  title_id: "Perancangan Mesin Pirolisis Limbah Plastik Bertenaga Surya dan Angin Menggunakan Perangkat Lunak Autodesk Inventor 2020"
+  funder: "Politeknik ATI Makassar"
+  funder_id: "Politeknik ATI Makassar"
+  scheme: "Institutional research funding (DIPA)"
+  scheme_id: "Pendanaan riset institusi (DIPA)"
+  amount: "Rp 3.000.000"
+  amount_value: 3000000
+  year_start: 2020
+  year_end: 2021
+  status: completed
+  url: ""

@@ -1,0 +1,22 @@
+{%- comment -%} Home strip under the hero: the 9 distinct logos from _data/about.yml (funders first, then co-author institutions not already shown), scrolling slowly. The first set has alt text, the repeated sets are decorative. {%- endcomment -%}
+{%- assign seen = "|" -%}
+{%- capture set_alt -%}
+{%- for f in site.data.about.funders -%}{%- assign key = "|" | append: f.logo | append: "|" -%}{%- unless seen contains key -%}{%- assign seen = seen | append: f.logo | append: "|" -%}<li><img src="{{ '/assets/img/partners/' | append: f.logo | relative_url }}" alt="{{ f.name | escape }}" style="--h: {{ f.h }}" draggable="false"></li>{%- endunless -%}{%- endfor -%}
+{%- for c in site.data.about.collaborators -%}{%- assign key = "|" | append: c.logo | append: "|" -%}{%- unless seen contains key -%}{%- assign seen = seen | append: c.logo | append: "|" -%}<li><img src="{{ '/assets/img/partners/' | append: c.logo | relative_url }}" alt="{{ c.name | escape }}" style="--h: {{ c.h }}" draggable="false"></li>{%- endunless -%}{%- endfor -%}
+{%- endcapture -%}
+{%- assign seen = "|" -%}
+{%- capture set_deco -%}
+{%- for f in site.data.about.funders -%}{%- assign key = "|" | append: f.logo | append: "|" -%}{%- unless seen contains key -%}{%- assign seen = seen | append: f.logo | append: "|" -%}<li><img src="{{ '/assets/img/partners/' | append: f.logo | relative_url }}" alt="" style="--h: {{ f.h }}" draggable="false"></li>{%- endunless -%}{%- endfor -%}
+{%- for c in site.data.about.collaborators -%}{%- assign key = "|" | append: c.logo | append: "|" -%}{%- unless seen contains key -%}{%- assign seen = seen | append: c.logo | append: "|" -%}<li><img src="{{ '/assets/img/partners/' | append: c.logo | relative_url }}" alt="" style="--h: {{ c.h }}" draggable="false"></li>{%- endunless -%}{%- endfor -%}
+{%- endcapture -%}
+<section class="partners-strip fade-in" aria-labelledby="partnersTitle">
+  <h2 class="partners-title" id="partnersTitle">{% include t.html key="about_network_title" %}</h2>
+  <div class="marquee">
+    <div class="marquee-track">
+      <ul class="marquee-set">{{ set_alt }}</ul>
+      <ul class="marquee-set" aria-hidden="true">{{ set_deco }}</ul>
+      <ul class="marquee-set" aria-hidden="true">{{ set_deco }}</ul>
+      <ul class="marquee-set" aria-hidden="true">{{ set_deco }}</ul>
+    </div>
+  </div>
+</section>
