@@ -1,0 +1,27 @@
+{%- comment -%} Home gallery under the news section. Data: _data/instagram.yml, profile link: site.lab.social.instagram. Shows the official Instagram profile embed (iframe) by default; if _data/instagram.yml has enabled: true it shows the tile grid written by tools/fetch_instagram.py instead. {%- endcomment -%}
+{%- assign ig_url = site.lab.social.instagram -%}
+{%- if ig_url != "" -%}
+{%- assign ig_handle = ig_url | split: "instagram.com/" | last | remove: "/" -%}
+<section class="section--alt ig-section" data-nosnippet aria-labelledby="igTitle">
+  <div class="section-inner fade-in">
+    <div class="section-header is-centered"><h2 class="section-title" id="igTitle"><i class="fab fa-instagram ig-title-icon" aria-hidden="true"></i> {% include t.html key="ig_title" %}</h2></div>
+    <p class="editorial-lede is-centered ig-lede">{% include t.html key="ig_lede" %}</p>
+    {%- if site.data.instagram.enabled and site.data.instagram.tiles.size > 0 -%}
+    <ul class="ig-grid">
+      {%- for t in site.data.instagram.tiles -%}
+      {%- assign tile_url = t.url | default: "" -%}
+      {%- if tile_url == "" -%}{%- assign tile_url = ig_url -%}{%- endif -%}
+      <li><a class="ig-tile" href="{{ tile_url }}" target="_blank" rel="noopener" title="{{ t.alt | escape }}">
+        <img src="{{ '/assets/img/' | append: t.image | relative_url }}" alt="{{ t.alt | escape }}" width="480" height="600" loading="lazy">
+        <span class="ig-badge" aria-hidden="true">{% if t.type == "video" %}<i class="fas fa-play"></i>{% elsif t.type == "carousel" %}<i class="fas fa-clone"></i>{% else %}<i class="fab fa-instagram"></i>{% endif %}</span>
+        <span class="ig-hover" aria-hidden="true"><i class="fab fa-instagram"></i> {% include t.html key="ig_view" %}</span>
+      </a></li>
+      {%- endfor -%}
+    </ul>
+    {%- else -%}
+    <div class="ig-embed"><iframe src="{{ ig_url | append: 'embed' }}" title="Instagram @{{ ig_handle }}" loading="lazy" scrolling="yes" allowtransparency="true" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    {%- endif -%}
+    <p class="ig-follow"><a href="{{ ig_url }}" class="btn btn-primary" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i> {% include t.html key="ig_follow" %} @{{ ig_handle }}</a></p>
+  </div>
+</section>
+{%- endif -%}
