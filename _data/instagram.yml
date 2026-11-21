@@ -1,5 +1,5 @@
 # Home Instagram gallery. Written by tools/fetch_instagram.py (workflow Update Instagram gallery), do not edit by hand.
-# Updated 2026-11-21 06:59 UTC from the Instagram feed.
+# Updated 2026-11-21 19:09 UTC from the Instagram feed.
 enabled: true
 tiles:
   - image: "social/ig-17996531991112421.webp"
