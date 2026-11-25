@@ -1,0 +1,96 @@
+---
+layout: default
+title: Home
+description: Agromaterials Research Group at Politeknik ATI Makassar. Plant-based composite materials, agro-processing machinery, and sustainable manufacturing.
+permalink: /
+---
+<!-- Hero -->
+<section class="hero-wrap">
+  <div class="hero-pattern" aria-hidden="true"></div>
+  <div class="hero hero--split hero--iso">
+    <div class="hero-text">
+      <p class="hero-eyebrow">{{ site.lab.institution }}</p>
+      <h1 class="hero-title">{% include t.html key="hero_title" %}</h1>
+      <p class="hero-tagline">{% include t.html key="hero_tagline" %}</p>
+      <div class="hero-actions">
+        <a href="{{ '/research/' | relative_url }}" class="btn btn-primary"><i class="fas fa-microscope"></i> {% include t.html key="btn_explore" %}</a>
+        {% if site.show_pages.apply %}<a href="{{ '/apply/' | relative_url }}" class="btn btn-outline"><i class="fas fa-paper-plane"></i> {% include t.html key="btn_apply_join" %}</a>
+        {% else %}<a href="{{ '/contact/' | relative_url }}" class="btn btn-outline"><i class="fas fa-envelope"></i> {% include t.html key="btn_contact_us" %}</a>{% endif %}
+      </div>
+      {% assign hs_grants = site.data.grants | where_exp: "x", "x.status != 'submitted'" | size %}
+      {% include grant-calc.html %}
+      {% assign hs_usd_k = total | divided_by: site.lab.usd_idr_fallback | divided_by: 1000.0 | round %}
+      <ul class="hero-stats">
+        <li><b>{{ site.data.publications | size }}</b><span>{% include t.html key="about_stat_pubs" %}</span></li>
+        <li><b>{{ hs_grants }}</b><span>{% include t.html key="about_stat_grants" %}</span></li>
+        <li><b id="hsUsd" data-total="{{ total }}" data-sheet="{{ site.lab.usd_idr_sheet }}" data-rate="{{ site.lab.usd_idr_fallback }}" data-rate-date="{{ site.lab.usd_idr_fallback_date }}">{{ hs_usd_k }}K</b><span>{% include t.html key="hero_stat_funding" %}</span></li>
+      </ul>
+    </div>
+    <div class="hero-visual" aria-hidden="true">{% include illus/hero-iso.html %}</div>
+  </div>
+</section>
+
+{% include partners-marquee.html %}
+
+<!-- Featured research: best composite papers -->
+<section class="section--alt feat-section">
+  <div class="section-inner fade-in">
+    <div class="section-header is-centered"><h2 class="section-title">{% include t.html key="projects_title" %}</h2></div>
+    <p class="editorial-lede is-centered" style="margin-bottom: 2rem;">{% include t.html key="projects_lede" %}</p>
+    {%- assign feat_n = site.data.projects | size -%}
+    <div class="feat-grid feat-grid--{{ feat_n }}">
+      {%- for p in site.data.projects -%}
+      {%- assign pub = site.data.publications | where: "url", p.pub | first -%}
+      <article class="feat-card" id="{{ p.id }}">
+        <div class="feat-media"><img src="{{ '/assets/img/' | append: p.image | relative_url }}" alt="{{ p.alt | escape }}" width="1000" height="562" loading="lazy"></div>
+        <div class="feat-body">
+          <p class="feat-meta">{% if pub.level %}<span class="pub-level" title="{{ pub.level_basis | escape }}">{{ pub.level }}</span>{% endif %}<span class="feat-venue"><em>{{ pub.venue }}</em>, {{ pub.year }}</span></p>
+          <h3 class="feat-title"><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></h3>
+          <p class="feat-desc">{% include tt.html en=p.desc id=p.desc_id %}</p>
+          <p class="feat-read">{% include t.html key="feat_read" %} <i class="fas fa-arrow-right" aria-hidden="true"></i></p>
+          {%- if p.credit %}
+          <p class="feat-credit">{% include t.html key="feat_image" %} {{ p.credit }}{% if p.license %}, <a href="{{ p.license_url }}" target="_blank" rel="noopener">{{ p.license }}</a>{% endif %}</p>
+          {%- endif %}
+        </div>
+      </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<!-- What we study -->
+<section class="section fade-in">
+  <h2 class="editorial-heading is-centered">{% include t.html key="study_title" %}</h2>
+  <p class="editorial-lede is-centered">{% include t.html key="study_lede" %}</p>
+  <div class="research-grid">
+    {% for t in site.data.research %}
+    {% assign flip = forloop.index0 | modulo: 2 %}
+    <div class="research-row{% if flip == 1 %} research-row--flip{% endif %}">
+    <div class="research-grid-text">
+      <div class="theme-item">
+        <h3 class="theme-name"><i class="fas fa-{{ t.icon }}" aria-hidden="true"></i> {% include tt.html en=t.name id=t.name_id %}</h3>
+        <p class="theme-desc">{% include tt.html en=t.desc id=t.desc_id %}</p>
+      </div>
+    </div>
+    <div class="research-grid-figure research-grid-figure--{{ forloop.index0 | modulo: 2 }}{% if t.iso %} research-grid-figure--iso{% endif %}" aria-hidden="true">{% if t.illus == 'composites' %}{% include illus/composites-iso.html %}{% elsif t.illus == 'agro' %}{% include illus/agro-iso.html %}{% elsif t.illus == 'cnc' %}{% include illus/cnc-iso.html %}{% elsif t.illus == 'energy' %}{% include illus/energy-iso.html %}{% endif %}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% include flow-map.html %}
+
+<!-- Recent news -->
+<section class="section--plain" data-nosnippet>
+  <div class="section-inner fade-in">
+    <div class="section-header is-centered"><h2 class="section-title">{% include t.html key="news_title" %}</h2></div>
+    <p class="editorial-lede is-centered" style="margin-bottom: 2rem;">{% include t.html key="news_lede" %}</p>
+    {% assign news_sorted = site.data.news | sort: "date" | reverse %}
+    <div class="blog-grid news-grid">
+      {% for n in news_sorted limit: 3 %}{% include news-card.html n=n %}{% endfor %}
+    </div>
+    <p class="news-all"><a href="{{ '/blog/' | relative_url }}" class="btn btn-outline btn-sm">{% include t.html key="news_all" %} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+  </div>
+</section>
+
+{% include instagram-gallery.html %}
