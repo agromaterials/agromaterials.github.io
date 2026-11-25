@@ -1,7 +1,11 @@
 # Home Instagram gallery. Written by tools/fetch_instagram.py (workflow Update Instagram gallery), do not edit by hand.
-# Updated 2026-11-24 22:21 UTC from the Instagram feed.
+# Updated 2026-11-25 08:24 UTC from the Instagram feed.
 enabled: true
 tiles:
+  - image: "social/ig-17878318854593738.webp"
+    alt: "SELAMAT & SUKSES! 🎉 atas raihan Hibah Penelitian BPDP 2026 kepada tim riset Agromaterials Research Group..."
+    url: "https://www.instagram.com/p/DgINfK2CPlX/"
+    type: image
   - image: "social/ig-17931550059186584.webp"
     alt: "Tiga hari, dua kelompok praktik, dan panel sekam padi yang dibuat langsung oleh peserta 🌾 18–20 November..."
     url: "https://www.instagram.com/p/DgAWoklGjPQ/"
@@ -13,8 +17,4 @@ tiles:
   - image: "social/ig-17919453765540715.webp"
     alt: "Dari ruang kelas ke laboratorium 🌾 Halo Sobat Agromaterials! Saat ini kami sedang melakukan pengujian..."
     url: "https://www.instagram.com/p/DfqfsKsEVTV/"
-    type: carousel
-  - image: "social/ig-17987859653891842.webp"
-    alt: "Petani Soppeng belajar bikin panel dari sekam padi 🌾 4–6 November 2026, Agromaterials Research Group..."
-    url: "https://www.instagram.com/p/Dfo8GImmqPt/"
     type: carousel
