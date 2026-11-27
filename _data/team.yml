@@ -122,8 +122,8 @@ members:
   - name: "Muhammad Nawir, S.T., M.T."
     role: "Researcher"
     role_id: "Peneliti"
-    focus: "Industrial Automation"
-    focus_id: "Otomasi Industri"
+    focus: "Industrial Automation · Electrical Design · Electrical Installation"
+    focus_id: "Otomasi Industri · Desain Kelistrikan · Instalasi Listrik"
     photo: "team/muhammad-nawir-2.webp"
     links: { scholar: "", github: "", linkedin: "https://www.linkedin.com/in/muhammad-nawir-937526ab/" }
   - name: "Syardah Ugra Al' Adawiyah, M.Sc."
