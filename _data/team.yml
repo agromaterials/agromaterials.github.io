@@ -115,8 +115,8 @@ members:
   - name: "Muhammad Fadli Azis, S.T., M.Sc."
     role: "Lecturer & Researcher"
     role_id: "Dosen & Peneliti"
-    focus: "Electrical Power Systems"
-    focus_id: "Sistem Tenaga Listrik"
+    focus: "Power Systems · Optimization · Sustainable Electrical Materials"
+    focus_id: "Sistem Tenaga · Optimasi · Material Listrik Berkelanjutan"
     photo: "team/fadli-azis-3.webp"
     links: { scholar: "https://scholar.google.com/citations?hl=en&user=nhcvKaEAAAAJ", orcid: "https://orcid.org/0000-0001-7711-299X", scopus: "https://www.scopus.com/authid/detail.uri?authorId=57218940451", sinta: "https://sinta.kemdiktisaintek.go.id/authors/profile/6704390", github: "", linkedin: "https://www.linkedin.com/in/muhammadfadliazis/" }
   - name: "Muhammad Nawir, S.T., M.T."
