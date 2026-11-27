@@ -1,7 +1,15 @@
 # Home Instagram gallery. Written by tools/fetch_instagram.py (workflow Update Instagram gallery), do not edit by hand.
-# Updated 2026-11-27 08:19 UTC from the Instagram feed.
+# Updated 2026-11-27 21:11 UTC from the Instagram feed.
 enabled: true
 tiles:
+  - image: "social/ig-17892255891621121.webp"
+    alt: "Sisa panen bisa jadi peluang usaha? Bisa, kalau dikelola dengan cara sirkular. 🌾♻️ Materi ke-2 dari Bimtek..."
+    url: "https://www.instagram.com/p/DgPNObJkc-u/"
+    type: carousel
+  - image: "social/ig-18132190213858241.webp"
+    alt: "Jerami padi: dibakar, atau jadi pelindung kemasan? 🌾📦 Materi ke-1 dari Bimtek Cushioning Jerami di Soppeng..."
+    url: "https://www.instagram.com/p/DgPM6RmEdCR/"
+    type: carousel
   - image: "social/ig-17878318854593738.webp"
     alt: "SELAMAT & SUKSES! 🎉 atas raihan Hibah Penelitian BPDP 2026 kepada tim riset Agromaterials Research Group..."
     url: "https://www.instagram.com/p/DgINfK2CPlX/"
@@ -9,12 +17,4 @@ tiles:
   - image: "social/ig-17931550059186584.webp"
     alt: "Tiga hari, dua kelompok praktik, dan panel sekam padi yang dibuat langsung oleh peserta 🌾 18–20 November..."
     url: "https://www.instagram.com/p/DgAWoklGjPQ/"
-    type: carousel
-  - image: "social/ig-17996531991112421.webp"
-    alt: "Intip hari pertama Bimtek Angkatan II! 🌾 Bimbingan Teknis \"Produksi Smart Composite Panel Berbasis Sekam Padi..."
-    url: "https://www.instagram.com/reel/Df699KwCdW7/"
-    type: video
-  - image: "social/ig-17919453765540715.webp"
-    alt: "Dari ruang kelas ke laboratorium 🌾 Halo Sobat Agromaterials! Saat ini kami sedang melakukan pengujian..."
-    url: "https://www.instagram.com/p/DfqfsKsEVTV/"
     type: carousel
